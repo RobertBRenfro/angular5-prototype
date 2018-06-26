@@ -16,7 +16,7 @@ import {HostBinding, Input, Output, EventEmitter} from '@angular/core';
       style({ opacity: 1 }))]),{optional: true}),
 
       query('*', [
-        style({ transform: 'translateX(200px)', opacity: 0 }),
+        style({ opacity: 0, transform: 'rotateX(-90deg) translateY(150px) translateZ(50px)' }),
         stagger(100, [
           animate('1200ms cubic-bezier(0.35, 0, 0.25, 1)', style('*'))
         ])
