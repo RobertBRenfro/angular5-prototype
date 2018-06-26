@@ -21,6 +21,7 @@ import {HostBinding, Input, Output, EventEmitter} from '@angular/core';
           animate('1200ms cubic-bezier(0.35, 0, 0.25, 1)', style('*'))
         ])
     ]),
+
     query(
       '*',
       [
@@ -33,10 +34,7 @@ import {HostBinding, Input, Output, EventEmitter} from '@angular/core';
           style({ opacity: 1, transform: 'translateY(0) rotate(0)' })
         )
   ])
-])]})
-
-
-@HostBinding('@preview')
+])])]})
 
 export class AppComponent {
   title = 'app';
