@@ -1,6 +1,7 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div class="bg-image" [@bgImgTrigger]>
-<div class="image-container" >
+<div class="image-container" [@statusChange]="{value: statusState}">
+
   <a routerLink="/"><img src="./assets/home/bankofengland.jpeg" /> Home</a>
   <a routerLink="/about/48"><img src="./assets/home/money.jpeg" /> About</a>
   <a ><img src="./assets/home/flyingmoney.jpeg" /></a>
