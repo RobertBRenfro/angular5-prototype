@@ -9,12 +9,20 @@ import { FormsModule } from '@angular/forms';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';  
 import { DataService } from './data.service';
+import { SidebarComponent } from './sidebar/sidebar.component';
+import { PostsComponent } from './posts/posts.component';
+import { UsersComponent } from './users/users.component';
+import { DetailsComponent } from './details/details.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent
+    AboutComponent,
+    SidebarComponent,
+    PostsComponent,
+    UsersComponent,
+    DetailsComponent
   ],
   imports: [
     BrowserModule,

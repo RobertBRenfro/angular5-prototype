@@ -2,12 +2,17 @@
 <div class="bg-image" [@bgImgTrigger]>
 <div class="image-container" [@statusChange]="{value: statusState}">
 
-  <a routerLink="/"><img id="bankofengland" src="./assets/home/bankofengland.jpeg" /> Home</a>
-  <a routerLink="/about/48"><img id="money" src="./assets/home/money.jpeg" /> About</a>
-  <a ><img id="flyingmoney" src="./assets/home/flyingmoney.jpeg" /></a>
+  <a><img id="bankofengland" src="./assets/home/bankofengland.jpeg" /></a>
+  <a><img id="money" src="./assets/home/money.jpeg" /></a>
+  <a><img id="flyingmoney" src="./assets/home/flyingmoney.jpeg" /></a>
 </div>
 </div>
 
+<div id="container">
+  <app-sidebar></app-sidebar>
 
-<router-outlet></router-outlet>
+  <div id="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
 
