@@ -8,16 +8,17 @@ import { BehaviorSubject } from 'rxjs/BehaviorSubject';
 })
 export class DataService {
 
-  private goals = new BehaviorSubject<any>(['The initial goal', 'Another silly life goal']);
-  goal = this.goals.asObservable();
-
   constructor(private http: HttpClient) { }
-
-  changeGoal(goal) {
-    this.goals.next(goal)
-  }
   
   getUsers() {
     return this.http.get('https://jsonplaceholder.typicode.com/users')
+  }
+
+  getUser(userId) {
+    return this.http.get('https://jsonplaceholder.typicode.com/users/'+userId)
+  }
+
+  getPosts() {
+    return this.http.get('https://jsonplaceholder.typicode.com/posts')
   }
 }
